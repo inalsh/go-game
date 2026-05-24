@@ -1,0 +1,221 @@
+body{
+    background:#f7f3eb;
+    background-image:url("https://www.transparenttextures.com/patterns/rice-paper.png");
+    font-family:Arial, sans-serif;
+    color:#222;
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+h1, h2, h3, h4{
+    font-weight:700;
+    color:#1f252c;
+}
+
+.display-3{
+    font-weight:300;
+    letter-spacing:1px;
+}
+
+/* PAGE ACCUEIL */
+
+.home-page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:
+        linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.78)),
+        url("images/home-bg.jpg") center/cover no-repeat;
+}
+
+.home-box{
+    background:rgba(255,255,255,0.92);
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.12);
+}
+
+.logo{
+width:220px;
+height:auto;
+display:block;
+margin:auto;
+}
+
+/* PAGE JEU */
+
+.game-page{
+    min-height:100vh;
+    padding-bottom:40px;
+}
+
+.controls-box{
+    background:rgba(255,255,255,0.9);
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08);
+    margin-bottom:25px;
+}
+
+.info-box{
+    background:rgba(255,255,255,0.9);
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* GOBAN */
+
+#board{
+    display:grid;
+    width:max-content;
+    margin:auto;
+    background:#d7a95d;
+    padding:14px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.2);
+}
+
+.cell{
+    width:40px;
+    height:40px;
+    border:1px solid #111;
+    position:relative;
+    cursor:pointer;
+    box-sizing:border-box;
+}
+
+.stone{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+
+.black{
+    background:radial-gradient(circle at 30% 30%, #555, #000);
+}
+
+.white{
+    background:radial-gradient(circle at 30% 30%, #fff, #d9d9d9);
+    border:1px solid #888;
+}
+
+/* SELECTS ET BOUTONS */
+
+.form-select{
+    border-radius:12px !important;
+    padding:10px 14px;
+}
+
+.btn{
+    border-radius:12px;
+    padding:10px 18px;
+    font-weight:600;
+}
+
+/* PAGES CONTENU */
+
+.content-page{
+    min-height:100vh;
+}
+
+.hero-banner{
+    min-height:260px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:40px 20px;
+}
+
+.hero-banner h1{
+    color:white;
+    font-size:4rem;
+    margin-bottom:12px;
+}
+
+.hero-banner p{
+    font-size:1.3rem;
+    margin:0;
+}
+
+.history-hero{
+    background:
+        linear-gradient(rgba(0,0,0,0.62), rgba(0,0,0,0.62)),
+        url("images/history-banner.jpg") center/cover no-repeat;
+}
+
+.rules-hero{
+    background:
+        linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)),
+        url("images/rules-banner.jpg") center/cover no-repeat;
+}
+
+.section-card{
+    background:rgba(255,255,255,0.92);
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 4px 16px rgba(0,0,0,0.08);
+    margin-bottom:35px;
+}
+
+.section-card h2,
+.section-card h3{
+    margin-bottom:18px;
+    color:#2d2118;
+}
+
+.section-card p{
+    font-size:1.07rem;
+    line-height:1.8;
+    margin-bottom:0;
+}
+
+.section-card img{
+    border-radius:14px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.12);
+    width:100%;
+    height:auto;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px){
+    .hero-banner h1{
+        font-size:3rem;
+    }
+}
+
+@media (max-width: 768px){
+    .cell{
+        width:28px;
+        height:28px;
+    }
+
+    .stone{
+        width:20px;
+        height:20px;
+        top:4px;
+        left:4px;
+    }
+
+    .home-box{
+        padding:30px 20px;
+    }
+
+    .hero-banner h1{
+        font-size:2.4rem;
+    }
+
+    .hero-banner p{
+        font-size:1.05rem;
+    }
+}
